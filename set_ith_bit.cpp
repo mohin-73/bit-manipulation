@@ -39,13 +39,13 @@ int main() {
     Binary of 9 = 1001
                     ↑
              set this bit (i = 1)
-
+    mask is shorthand for bitmask and i = setposition
     mask = (1 << 1)
          = 2
          = (0 0000010)
 
     mask | num = (0 0001001) | (0 0000010)
-                  = (0 0001011)
+               = (0 0001011)
 
     After setting → 1011 = +11
 
