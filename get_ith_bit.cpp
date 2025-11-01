@@ -39,7 +39,7 @@ int main() {
     Binary of 13 = 1101
                     ↑
              get this bit (i = 2)
-
+    mask is shorthand for bitmask and i = setposition
     mask = (1 << 2)
          = 4
          = (0 0000100)
