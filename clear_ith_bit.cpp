@@ -38,7 +38,7 @@ int main() {
 
     Binary of 13 = 1101
                     ↑
-            clear this bit
+            clear this bit (i = 2)
 
     mask = ~(1 << 2)
          = ~(4)
@@ -47,7 +47,7 @@ int main() {
     mask & num = (1 1111101) & (0 0001011) = (0 0001001)
 
     Left most bit is the sign bit, 0 for +ve 1 for -ve
-    After clearing → 1001 = +9
+    After clearing → 1001 = 9
 
     Output:
     9
