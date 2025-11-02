@@ -40,9 +40,9 @@ int main() {
          → (1 << 3) - 1 = 7 (111₂)
 
     4. Explanation:
-       → All numbers between 2^(p-1) and n have the same MSB = 1,
+       → All numbers between 2^(p - 1) and n have the same MSB = 1,
          so their AND will keep that bit set.
-       → Including (2^(p-1) - 1) introduces a 0 in that position,
+       → Including (2^(p - 1) - 1) introduces a 0 in that position,
          making total AND = 0.
 
     5. Complexity:
