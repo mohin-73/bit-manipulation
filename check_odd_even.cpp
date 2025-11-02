@@ -8,10 +8,10 @@ int main() {
     int num;
     cin >> num;
     if (num & 1) {
-        cout << "Odd\n";
+        cout << "odd\n";
     }
     else {
-        cout << "Even\n";
+        cout << "even\n";
     }
     return 0;
 }
