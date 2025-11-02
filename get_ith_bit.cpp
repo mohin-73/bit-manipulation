@@ -10,7 +10,7 @@ int getIthBit(int n, int i) {
 int main() {
     int n, i;
     cin >> n >> i;
-    cout << getIthBit(n, i);
+    cout << getIthBit(n, i) << '\n';
     return 0;
 }
 
@@ -53,4 +53,3 @@ int main() {
     1
 ─────────────────────────────────────────────
 */
-
