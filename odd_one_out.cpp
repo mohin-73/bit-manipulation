@@ -16,7 +16,7 @@ int main() {
 
 /*
 ─────────────────────────────────────────────
-    XOR (Exclusive OR) — Key Properties 
+    XOR (Exclusive OR) — Key Properties
 ─────────────────────────────────────────────
     1. x ^ x = 0  
     → Any number XOR itself becomes 0. 
