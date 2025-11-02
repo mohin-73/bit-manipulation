@@ -16,7 +16,7 @@ int main() {
 
 /*
 ─────────────────────────────────────────────
-    Bit Numbering Convention (Important)
+    Bit Numbering Convention (Important) 
 ─────────────────────────────────────────────
     Bits are counted from **right to left**
     The **Least Significant Bit (LSB)** — the rightmost bit — is position **0**
