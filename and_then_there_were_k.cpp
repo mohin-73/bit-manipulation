@@ -6,7 +6,7 @@ int solve() {
     int n, p = 0;
     cin >> n;
     while (n) {
-        p +=1;
+        p += 1;
         n >>= 1;
     }
     return ((1 << (p - 1)) - 1);
