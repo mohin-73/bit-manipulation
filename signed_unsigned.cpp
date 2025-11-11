@@ -25,7 +25,7 @@ void bitwiseOperation(const string &op, int x, int y, int result) {
     showBinaryUnsigned("Result", result);
 }
 
-void bitWiseNOT(int x) {
+void bitwiseNOT(int x) {
     cout << "...................................................................\n";
     cout << "Bitwise NOT\n";
     cout << "...................................................................\n";
@@ -43,8 +43,8 @@ int main() {
     bitwiseOperation("Bitwise AND (x & y)", x, y, x & y);
     bitwiseOperation("Bitwise OR  (x | y)", x, y, x | y);
     bitwiseOperation("Bitwise XOR (x ^ y)", x, y, x ^ y);
-    bitWiseNOT(x);
-    bitWiseNOT(y);
+    bitwiseNOT(x);
+    bitwiseNOT(y);
     cout << "...................................................................\n";
     return 0;
 }
@@ -53,13 +53,13 @@ int main() {
 ──────────────────────────────────────────────────────────────────────────────────────────
     QUICK REFERENCE — Bitwise Operators in C++
 ──────────────────────────────────────────────────────────────────────────────────────────
-    Operator        Description                Example (a = 5, b = 3)
+    Operator        Description                  Example (a = 5, b = 3)
 ──────────────────────────────────────────────────────────────────────────────────────────
        &            Bitwise AND                     a & b = 1
        |            Bitwise OR                      a | b = 7
        ^            Bitwise XOR                     a ^ b = 6
        ~            Bitwise NOT                     ~a = -6  (in two’s complement)
-       >>           Bitwisse Right Shift            a >> 1 = 2  (a = a / 2)
+       >>           Bitwise Right Shift             a >> 1 = 2  (a = a / 2)
        <<           Bitwise Left Shift              a << 2 = 20 (a = a * 4)
 ──────────────────────────────────────────────────────────────────────────────────────────
     Binary View
