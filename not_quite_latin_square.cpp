@@ -10,26 +10,11 @@ char solve() {
             str = s;
         }
     }
-    int mask = 0, missing;
+    int mask = 0;
     for (char ch : str) {
-        if (ch == 'A') {
-            mask |= 1;
-        } else if (ch == 'B') {
-            mask |= 2;
-        } else if (ch == 'C') {
-            mask |= 4;
-        }
+        mask |= ch == 'A' ? 1 : ch == 'B' ? 2 : ch == 'C' ? 4 : 0;
     }
-    missing = mask ^ 7;
-    if (missing == 1) {
-        return 'A';
-    }
-    else if (missing == 2) {
-        return 'B';
-    }
-    else {
-        return 'C';
-    }
+    return ((mask ^ 7) == 1) ? 'A' : ((mask ^ 7) == 2) ? 'B' : 'C';
 }
 
 int main() {
