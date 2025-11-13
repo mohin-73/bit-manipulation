@@ -52,6 +52,7 @@ int main() {
     Notes
 ──────────────────────────────────────────────────────────────────────────────────────────
     • Bit positions start from **0** (rightmost bit).
+    • Works for both positive and negative integers.
     • This check is faster than using modulo (%) since it directly inspects the LSB.
 ──────────────────────────────────────────────────────────────────────────────────────────
 */
