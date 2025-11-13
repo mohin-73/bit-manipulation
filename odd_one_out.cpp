@@ -2,14 +2,19 @@
 
 using namespace std;
 
+int solve() {
+    int a, b, c;
+    cin >> a >> b >> c;
+    return (a ^ b ^ c);
+}
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    int t, a, b, c;
+    int t;
     cin >> t;
     while (t--) {
-        cin >> a >> b >> c;
-        cout << (a ^ b ^ c) << '\n';
+        cout << solve() << '\n';
     }
     return 0;
 }
