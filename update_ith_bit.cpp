@@ -26,8 +26,8 @@ int main() {
     Step 1: Binary Representation
 ─────────────────────────────────────────────────────────────────
         13 = (1101)₂
-                ↑
-          bit position = 2  ← (counting from 0, rightmost bit)
+               ↑
+        bit position = 2  ← (counting from 0, rightmost bit)
 ─────────────────────────────────────────────────────────────────
     Step 2: Create a Mask to Clear Bit i
 ─────────────────────────────────────────────────────────────────
