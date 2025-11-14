@@ -25,19 +25,19 @@ int main() {
 
 /*
 ───────────────────────────────────────────────────────────────────────────
-                            Key Idea
+    Key Idea
 ───────────────────────────────────────────────────────────────────────────
-1. Find the position of the Most Significant Bit (MSB)
+    Find the position of the Most Significant Bit (MSB)
 ───────────────────────────────────────────────────────────────────────────
     • Repeatedly right-shift (n >>= 1) until n becomes 0.
     • Count the number of shifts — call this count p.
     • Essentially, p = ⌊log₂(n)⌋ + 1
 ───────────────────────────────────────────────────────────────────────────
-2. MSB Position
+    MSB Position
 ───────────────────────────────────────────────────────────────────────────
     • The MSB is located at index (p - 1)
 ───────────────────────────────────────────────────────────────────────────
-3. Formula
+    Formula
 ───────────────────────────────────────────────────────────────────────────
     • Result = (1 << (p - 1)) - 1
     • This sets all bits below the MSB to 1.
@@ -46,7 +46,7 @@ int main() {
         p = 4
         Result = (1 << 3) - 1 = 7 (0111₂)
 ───────────────────────────────────────────────────────────────────────────
-4. Conceptual Explanation
+    Conceptual Explanation
 ───────────────────────────────────────────────────────────────────────────
     • All numbers in the range [2^(p - 1), n] share the same MSB = 1.
       Hence, their AND will retain that bit as 1.
@@ -55,7 +55,7 @@ int main() {
     • Therefore, (1 << (p - 1)) - 1 represents the AND result
       just before the range crosses the MSB boundary.
 ───────────────────────────────────────────────────────────────────────────
-5. Complexity
+    Complexity
 ───────────────────────────────────────────────────────────────────────────
     • Time  : O(log₂n)
     • Space : O(1)
